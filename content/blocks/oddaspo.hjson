@@ -1,0 +1,74 @@
+type: ItemTurret
+name: Oddaspo
+size: 10
+squareSprite: false
+health: 16500
+shootSound: shootAltLong
+requirements: [
+  copper/100
+]
+research: duo
+coolant: {
+  type: ConsumeLiquid
+  liquid: water
+  amount: 0.25
+}
+category: turret
+recoil: 1.5
+outlineColor: 2C2A36
+targetAir: true
+targetGround: true
+rotateSpeed: 2.25
+reload: 70
+range: 14000
+shootY: 1
+shoot: {
+  type: ShootSpread
+  shots: 5
+  spread: 16
+}
+ammoTypes: {
+  copper: {
+    type: BasicBulletType
+    sprite: arrow
+    buildingDamageMultiplier: 0.25
+    hitColor: a900ff
+    frontColor: ff005e
+    backColor: ff9200
+    damage: 4500
+    width: 8
+    height: 14
+    hitSize: 6
+    speed: 5
+    lifetime: 30
+    homingPower: 0.05
+    trailColor: F6B08A
+    trailChance: -1
+    trailEffect: shootSmokeTitan
+    trailInterval: 3
+    trailRotation: true
+    trailLength: 4
+    trailWidth: 0.5
+  }
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: oddaspo-
+    parts: [
+    {
+      type: RegionPart
+      suffix: -back
+      progress: recoil
+    }
+    {
+      type: RegionPart
+      suffix: -cannon
+      progress: recoil
+      moveX: 2
+      moveRot: -30
+      under: true
+      mirror: true
+      heatColor: 8DF9D1
+    }
+  ]
+}
