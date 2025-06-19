@@ -1,0 +1,7 @@
+name: op
+displayName: OP! Turrets
+author: Raviravirego76466
+description: adds turrets!
+version: "1.0.0"
+minGameVersion: "146"
+dependencies: [ ]
