@@ -39,7 +39,7 @@ ammoTypes: {
     width: 150
     height: 14
     hitSize: 6
-    speed: 10
+    speed: 15
     lifetime: 30
     homingPower: 0.05
     trailColor: F6B08A
